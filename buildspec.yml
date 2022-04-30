@@ -4,12 +4,10 @@ phases:
   install:
     commands:
        - yum install -y python3
-       - pip3 install pandas
-       - pip3 install numpy
-       - pip3 install scipy
+
   build:
     commands:
-      - python3 main.py
+      - python3 application.py
 artifacts:
   files:
    - '**/*'
