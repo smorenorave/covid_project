@@ -10,6 +10,6 @@ phases:
   build:
     commands:
       - python3 main.py
-  artifacts:
-    files:
-      - '**/*'
+artifacts:
+  files:
+   - '**/*'
