@@ -4,7 +4,7 @@ phases:
   install:
     commands:
        - yum install -y python3
-       - yum install python3-pandas
+       - python3-pip pandas
        - yum install python3-numpy
        - yum install python3-scipy
   build:
