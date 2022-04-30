@@ -1,5 +1,15 @@
 from flask import Flask
 
+def shutdown_server():
+    func = request.environ.get('werkzeug.server.shutdown')
+    if func is None:
+        raise RuntimeError('Not running with the Werkzeug Server')
+    func()
+
+def shutdown():
+    shutdown_server()
+    return 'Server shutting down...'
+
 # print a nice greeting.
 def say_hello(username = "teacher"):
     return '<p>Welcome %s!</p>\n' % username
@@ -53,3 +63,4 @@ if __name__ == "__main__":
     # Setting debug to True enables debug output. This line should be
     # removed before deploying a production app.
     application.debug = True
+    shutdown()
