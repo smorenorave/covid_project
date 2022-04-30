@@ -37,3 +37,6 @@ jobs:
     - name: Unit Test
       run: |
         python Test.py
+    - name: ML Metrics Validation
+      run: |
+        python main.py
