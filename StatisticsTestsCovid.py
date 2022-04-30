@@ -1,5 +1,5 @@
 
-from  InterpretacionCSV import df
+from  InterpretationCSV import df
 import numpy as np
 import pandas as pd
 from scipy import stats

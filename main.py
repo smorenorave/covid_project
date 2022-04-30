@@ -1,5 +1,5 @@
-from InterpretacionCSV import *
-from EstadisticosPruebasCovid  import *
+from InterpretationCSV import *
+from StatisticsTestsCovid  import *
 from Test import *
 
 def main():
