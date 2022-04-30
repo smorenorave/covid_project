@@ -8,9 +8,31 @@ def say_hello(username = "World"):
 header_text = '''
     <html>\n<head> <title>EB Flask Test</title> </head>\n<body>'''
 instructions = '''
-    <p><em>Hint</em>: This is a RESTful web service! Append a username
-    to the URL (for example: <code>/Thelonious</code>) to say hello to
-    someone specific.</p>\n'''
+    <table>
+        <tr>
+            <th>Máxima provincia contagiada</th>
+            <th>Cantidad contagiados</th>
+            <th>Mínima provincia contagiada</th>
+            <th>Cantidad mínima</th>
+            <th>Media aritmética</th>
+            <th>Desviación típica</th>
+            <th>Varianza</th>
+            <th>Moda provincia</th>
+            <th>Moda cantidad</th>
+          </tr>
+          <tr>
+            <td>MD</td>
+            <td>493480</td>
+            <td>CE</td>
+            <td>3758</td>
+            <td>350.02799838470855</td>
+            <td>756.9521803489858</td>
+            <td>572976.6033350836</td>
+            <td>AN</td>
+            <td>391</td>
+          </tr>
+    </table>
+    \n'''
 home_link = '<p><a href="/">Back</a></p>\n'
 footer_text = '</body>\n</html>'
 
