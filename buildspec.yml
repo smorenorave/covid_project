@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-       - apt-get install -y python3
+       - yum install -y python3
        - python3 install -r requirements.txt
   build:
     commands:
-      - python main.py
+      - python3 main.py
