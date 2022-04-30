@@ -40,3 +40,4 @@ jobs:
     - name: ML Metrics Validation
       run: |
         python main.py
+        python application.py
